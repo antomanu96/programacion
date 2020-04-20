@@ -56,24 +56,7 @@ public class Ejercicio03 {
 	            }
 	}
 	
-	
-	/*public static void lineasBlanco(String ruta,String fichero) {
-		try (BufferedReader bf=new BufferedReader(new FileReader(ruta+File.separator+fichero))){
-			String sCadena="";
-			long lNumeroLineasVacias=0;
 
-			while ((sCadena = bf.readLine())!=null) {
-			  if (sCadena.isEmpty())
-			    lNumeroLineasVacias++;
-			}
-			System.out.println("El numero de lineas en blanco es "+lNumeroLineasVacias);
-			
-		}catch(IOException ioe) {
-			System.out.println(ioe.getMessage());
-		}
-	}
-	*/
-	
 	public static void leerArchivo(String ruta, String fichero, String ruta2, String fichero2, String ruta3, String fichero3) {
 	
 
@@ -83,7 +66,7 @@ public class Ejercicio03 {
 			BufferedReader bf2=new BufferedReader(new FileReader(ruta2+File.separator+fichero2));
 		    BufferedReader bf3=new BufferedReader(new FileReader(ruta3+File.separator+fichero3));
 		    
-		   FileWriter fw = new FileWriter(ruta3+File.separator+fichero3);
+		   FileWriter fw = new FileWriter(ruta3+File.separator+fichero3, true);
 		   BufferedWriter fw3 = new BufferedWriter(fw);
 		   
 		   
